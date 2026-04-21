@@ -1,2 +1,2 @@
-# nihongolearn-quest.com
+# nihongolearn-quest-lp
 Landing page for NihongoQuest waitlist
