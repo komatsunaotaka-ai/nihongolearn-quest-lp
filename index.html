@@ -1027,17 +1027,30 @@ footer {
 
     <!-- Success state -->
     <div class="success-state" id="success-state">
-      <div class="check-big">✓</div>
-      <h3 data-i18n="success.title">You're on the list!</h3>
-      <p data-i18n="success.p1">We'll email you when NihongoQuest launches.</p>
-      <p data-i18n="success.p2">Your 40% early-bird discount is reserved.</p>
-      <p style="margin-top:20px; font-size:14px;">
-        <strong data-i18n="success.share">Help us launch faster — share with friends:</strong><br>
-        <a href="#" style="color:var(--sakura); margin: 0 8px;">WhatsApp</a> ·
-        <a href="#" style="color:var(--sakura); margin: 0 8px;">Facebook</a> ·
-        <a href="#" style="color:var(--sakura); margin: 0 8px;">TikTok</a>
-      </p>
-    </div>
+  <div class="check-big">✓</div>
+  <h3 data-i18n="success.title">You're on the list!</h3>
+  <p data-i18n="success.p1">We'll email you when NihongoQuest launches.</p>
+  <p data-i18n="success.p2">Your 40% early-bird discount is reserved.</p>
+  
+  <div style="margin-top: 28px; padding: 20px; background: var(--paper); border: 2px solid var(--ink); border-radius: 16px; box-shadow: 4px 4px 0 var(--ink);">
+    <p style="font-size:14px; font-weight:600; margin-bottom:12px;" data-i18n="success.beta1">🎁 As a thank-you, try our beta version now:</p>
+    <a href="https://nihongolearn-quest.lovable.app" 
+       target="_blank" 
+       rel="noopener noreferrer"
+       style="display: inline-block; background: var(--sakura); color: white; padding: 14px 28px; border-radius: 12px; font-weight: 700; font-size: 15px; text-decoration: none; border: 2px solid var(--ink); box-shadow: 3px 3px 0 var(--ink); transition: all 0.15s;"
+       onmouseover="this.style.transform='translate(-2px,-2px)'; this.style.boxShadow='5px 5px 0 var(--ink)';"
+       onmouseout="this.style.transform=''; this.style.boxShadow='3px 3px 0 var(--ink)';"
+       data-i18n="success.beta2">Try Beta Version →</a>
+    <p style="font-size:12px; color:#8577a8; margin-top:10px;" data-i18n="success.beta3">Learn all 46 hiragana characters • Free • No login required</p>
+  </div>
+  
+  <p style="margin-top:20px; font-size:14px;">
+    <strong data-i18n="success.share">Help us launch faster — share with friends:</strong><br>
+    <a href="#" style="color:var(--sakura); margin: 0 8px;">WhatsApp</a> ·
+    <a href="#" style="color:var(--sakura); margin: 0 8px;">Facebook</a> ·
+    <a href="#" style="color:var(--sakura); margin: 0 8px;">TikTok</a>
+  </p>
+</div>
   </div>
 </section>
 
