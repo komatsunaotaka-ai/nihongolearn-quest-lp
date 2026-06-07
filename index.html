@@ -1030,27 +1030,19 @@ src="https://www.facebook.com/tr?id=1663484384984948&ev=PageView&noscript=1"
     </p>
 
     <!-- Signup Form -->
-    <form class="signup-card" id="signup-form">
-      <h3 data-i18n="form.title">Register free — play the beta today</h3>
-      <p data-i18n="form.subtitle">Sign up to instantly unlock the free beta — hiragana, katakana & quizzes. Plus 40% off at launch.</p>
+    <!-- CTA Block -->
+<div class="signup-card">
+  <h3 data-i18n="cta_main.title">Start learning today — free, no signup</h3>
+  <p data-i18n="cta_main.subtitle">Jump straight in. No email needed.</p>
 
-      <div class="form-row">
-        <input type="email" required placeholder="Your email" name="email" data-i18n-placeholder="form.email" aria-label="Email">
-        <button type="submit" class="form-submit" data-i18n="form.submit">Unlock Free Beta →</button>
-      </div>
+  <div class="form-row">
+    <a href="https://nihongolearn-quest.lovable.app" target="_blank" rel="noopener" class="form-submit" data-i18n="cta_main.btn" style="text-decoration:none; text-align:center; display:inline-block;">Try Free Now →</a>
+  </div>
 
-      <div class="form-options" role="group" aria-label="Child age">
-        <span style="font-size:13px; font-weight:600; color:#5d4e85; align-self:center; margin-right:8px;" data-i18n="form.agelabel">My child's age:</span>
-        <label><input type="radio" name="age" value="6-9"><span>6–9</span></label>
-        <label><input type="radio" name="age" value="10-12"><span>10–12</span></label>
-        <label><input type="radio" name="age" value="13-15"><span>13–15</span></label>
-        <label><input type="radio" name="age" value="parent-only"><span data-i18n="form.ageother">Other</span></label>
-      </div>
-
-      <div class="signup-meta">
-        <span>🔒 <strong data-i18n="form.priv1">No spam.</strong> <span data-i18n="form.priv2">Unsubscribe anytime.</span></span>
-      </div>
-    </form>
+  <div class="signup-meta">
+    <span data-i18n="cta_main.meta">Free • Works in your browser • No email required</span>
+  </div>
+</div>
 
     <!-- Success state -->
     <div class="success-state" id="success-state">
@@ -1288,6 +1280,10 @@ const I18N = {
     "form.ageother": "Other",
     "form.priv1": "No spam.",
     "form.priv2": "Unsubscribe anytime.",
+    "cta_main.title": "Start learning today — free, no signup",
+    "cta_main.subtitle": "Jump straight in. No email needed.",
+    "cta_main.btn": "Try Free Now →",
+    "cta_main.meta": "Free • Works in your browser • No email required",
     "success.title": "You're on the list!",
     "success.p1": "We'll email you when NihongoQuest launches.",
     "success.p2": "Your 40% early-bird discount is reserved.",
@@ -1370,6 +1366,10 @@ const I18N = {
     "form.ageother": "Lain",
     "form.priv1": "Tiada spam.",
     "form.priv2": "Berhenti langganan bila-bila masa.",
+    "cta_main.title": "Mula belajar hari ini — percuma, tanpa daftar",
+    "cta_main.subtitle": "Terus mula. Tiada e-mel diperlukan.",
+    "cta_main.btn": "Cuba Percuma Sekarang →",
+    "cta_main.meta": "Percuma • Boleh guna di pelayar • Tiada e-mel diperlukan",
     "success.title": "Anda telah disenaraikan!",
     "success.p1": "Kami akan hantar e-mel bila NihongoQuest dilancarkan.",
     "success.p2": "Diskaun 40% awal pantas anda telah disimpan.",
@@ -1452,6 +1452,10 @@ const I18N = {
     "form.ageother": "其他",
     "form.priv1": "无垃圾邮件。",
     "form.priv2": "随时取消订阅。",
+    "cta_main.title": "今天就开始学习 — 免费,无需注册",
+    "cta_main.subtitle": "直接开始。无需邮箱。",
+    "cta_main.btn": "立即免费试用 →",
+    "cta_main.meta": "免费 • 在浏览器中使用 • 无需邮箱",
     "success.title": "您已成功加入！",
     "success.p1": "NihongoQuest 上线时我们会发邮件通知您。",
     "success.p2": "您的 40% 早鸟折扣已保留。",
