@@ -1221,8 +1221,8 @@ src="https://www.facebook.com/tr?id=1663484384984948&ev=PageView&noscript=1"
 <section class="final-cta">
   <div class="container">
     <h2 data-i18n-html="cta.title">Ready to start your child's<br>Japanese adventure?</h2>
-    <p data-i18n="cta.p">Join 1,247 families on the waitlist. Your 40% launch discount is waiting.</p>
-    <button class="cta-large" onclick="scrollTop()" data-i18n="cta.btn">Reserve Your Spot →</button>
+    <p data-i18n="cta.p">It's free to try — no signup, no email. Just open it and start your first quest.</p>
+    <a href="https://nihongolearn-quest.lovable.app" target="_blank" rel="noopener" class="cta-large" data-i18n="cta.btn" style="text-decoration:none; display:inline-block;">Try Free Now →</a>
   </div>
 </section>
 
@@ -1320,8 +1320,8 @@ const I18N = {
     "faq.q6": "How is this different from Duolingo?",
     "faq.a6": "We're built specifically for Malaysian K-12 learners. That means local-language support (BM, Chinese, English), cultural sensitivity (halal-friendly content), Malaysian pricing, and a focus on speaking — with AI conversation partners that give real pronunciation feedback, something Duolingo doesn't offer for Japanese.",
     "cta.title": "Ready to start your child's<br>Japanese adventure?",
-    "cta.p": "Join 1,247 families on the waitlist. Your 40% launch discount is waiting.",
-    "cta.btn": "Reserve Your Spot →",
+    "cta.p": "It's free to try — no signup, no email. Just open it and start your first quest.",
+    "cta.btn": "Try Free Now →",
     "footer.tagline": "Japanese learning, made joyful. Made in Malaysia, for Malaysia.",
     "footer.privacy": "Privacy Policy",
     "footer.terms": "Terms of Use",
@@ -1406,8 +1406,8 @@ const I18N = {
     "faq.q6": "Apa beza dengan Duolingo?",
     "faq.a6": "Kami dibina khusus untuk pelajar K-12 Malaysia. Itu bermakna sokongan bahasa tempatan (BM, Cina, Inggeris), sensitiviti budaya (kandungan mesra halal), harga Malaysia, dan fokus kepada bercakap — dengan rakan AI yang beri maklum balas sebutan sebenar, yang Duolingo tidak tawarkan untuk bahasa Jepun.",
     "cta.title": "Sedia mulakan pengembaraan<br>bahasa Jepun anak anda?",
-    "cta.p": "Sertai 1,247 keluarga dalam senarai menunggu. Diskaun pelancaran 40% anda menunggu.",
-    "cta.btn": "Tempah Tempat Anda →",
+    "cta.p": "Percuma untuk dicuba — tanpa daftar, tanpa e-mel. Buka sahaja dan mulakan misi pertama.",
+    "cta.btn": "Cuba Percuma Sekarang →",
     "footer.tagline": "Pembelajaran bahasa Jepun, penuh keseronokan. Dibuat di Malaysia, untuk Malaysia.",
     "footer.privacy": "Dasar Privasi",
     "footer.terms": "Terma Penggunaan",
@@ -1492,8 +1492,8 @@ const I18N = {
     "faq.q6": "和 Duolingo 有什么区别？",
     "faq.a6": "我们专为马来西亚 K-12 学习者打造。这意味着本地语言支持（马来文、中文、英文）、文化敏感性（清真友好内容）、马来西亚定价、以及对口语的重视 —— 配备能提供真实发音反馈的 AI 对话伙伴，这是 Duolingo 日语课程没有的。",
     "cta.title": "准备好让孩子开始<br>日语冒险了吗？",
-    "cta.p": "加入 1,247 个等候名单家庭。您的 40% 上线折扣正在等您。",
-    "cta.btn": "预留名额 →",
+    "cta.p": "免费试用 — 无需注册，无需邮箱。打开就能开始第一个任务。",
+    "cta.btn": "立即免费试用 →",
     "footer.tagline": "日语学习，充满乐趣。马来西亚制造，为马来西亚家庭。",
     "footer.privacy": "隐私政策",
     "footer.terms": "使用条款",
@@ -1527,7 +1527,7 @@ function setLang(lang) {
 }
 
 // ===== Form handling (stores locally for demo) =====
-document.getElementById('signup-form').addEventListener('submit', async (e) => {
+document.getElementById('signup-form')?.addEventListener('submit', async (e) => {
   e.preventDefault();
   
   const formData = new FormData(e.target);
