@@ -366,6 +366,21 @@ section {
 
 .section-title em { color: var(--sakura); font-style: italic; }
 
+.outcomes { padding: 44px 24px 76px; text-align: center; }
+.outcomes .container { max-width: 960px; }
+.outcomes-hook { max-width: 720px; margin: 0 auto 34px; font-size: clamp(17px,2.4vw,21px); font-weight: 600; line-height: 1.5; color: var(--deep); }
+.outcomes-hook b, .outcomes-hook strong { color: var(--sakura); }
+.outcomes-title { font-size: clamp(26px,3.6vw,40px); line-height: 1.08; letter-spacing: -0.02em; margin: 0 auto 30px; color: var(--deep); }
+.outcomes-title em { color: var(--sakura); font-style: italic; }
+.outcomes-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 14px; margin-bottom: 26px; }
+.outcome { background: var(--paper); border: 2px solid rgba(122,239,178,0.55); border-radius: 18px; padding: 18px 12px; display: flex; flex-direction: column; gap: 8px; align-items: center; box-shadow: 0 10px 24px -16px var(--shadow); }
+.oc-ja { font-family: 'Fraunces', serif; font-weight: 900; font-size: clamp(22px,2.6vw,30px); color: var(--deep); }
+.oc-en { font-size: 13px; font-weight: 700; color: rgba(26,19,64,0.72); line-height: 1.25; }
+.outcomes-goal { font-size: clamp(16px,2.2vw,20px); font-weight: 700; color: var(--deep); }
+.outcomes-goal strong { color: var(--sakura); }
+@media (max-width: 720px){ .outcomes-grid { grid-template-columns: repeat(2,1fr); } }
+
+
 /* ===== Why Section ===== */
 .why {
   background: var(--deep);
@@ -1020,13 +1035,13 @@ src="https://www.facebook.com/tr?id=1663484384984948&ev=PageView&noscript=1"
     </div>
 
     <h1 class="display" data-i18n-html="hero.title">
-      Learn Japanese<br>
-      the <span class="accent">fun</span> way.<br>
+      Real <span class="accent">Japanese</span>,<br>
+      played like a game.<br>
       <span class="jp-accent">楽しく</span> learn.
     </h1>
 
     <p class="hero-lead" data-i18n="hero.lead">
-      The Japanese learning adventure designed for Malaysian kids and teens. RPG quests, AI conversation practice, and parent-approved progress tracking — all in one app.
+      From their first ひらがな to ordering ramen in Tokyo. NihongoQuest is the quest-based app where Malaysian kids actually learn real Japanese — 15 minutes a day, starting free.
     </p>
 
     <!-- Signup Form -->
@@ -1045,6 +1060,21 @@ src="https://www.facebook.com/tr?id=1663484384984948&ev=PageView&noscript=1"
 </div>
 
  
+  </div>
+</section>
+
+<!-- OUTCOMES: what your child actually learns -->
+<section class="outcomes">
+  <div class="container">
+    <p class="outcomes-hook" data-i18n="outcomes.hook">The language behind the anime, games and culture your kids already love — and a real edge for their future.</p>
+    <h2 class="outcomes-title display" data-i18n-html="outcomes.title">By their first term, your child <em>can</em>:</h2>
+    <div class="outcomes-grid">
+      <div class="outcome"><span class="oc-ja">ひらがな</span><span class="oc-en" data-i18n="outcomes.o1">Read hiragana & katakana</span></div>
+      <div class="outcome"><span class="oc-ja">あいさつ</span><span class="oc-en" data-i18n="outcomes.o2">Greet & introduce themselves</span></div>
+      <div class="outcome"><span class="oc-ja">注文</span><span class="oc-en" data-i18n="outcomes.o3">Order food & count money</span></div>
+      <div class="outcome"><span class="oc-ja">道案内</span><span class="oc-en" data-i18n="outcomes.o4">Ask for directions</span></div>
+    </div>
+    <p class="outcomes-goal" data-i18n-html="outcomes.goal">…all the way to travelling Japan on their own — <strong>JLPT N5</strong>.</p>
   </div>
 </section>
 
@@ -1245,8 +1275,15 @@ const I18N = {
   en: {
     "badge.earlybird": "EARLY BIRD",
     "badge.status": "Free beta available now",
-    "hero.title": 'Learn Japanese<br>the <span class="accent">fun</span> way.<br><span class="jp-accent">楽しく</span> learn.',
-    "hero.lead": "The Japanese learning adventure designed for Malaysian kids and teens. RPG quests, AI conversation practice, and parent-approved progress tracking — all in one app.",
+    "hero.title": 'Real <span class="accent">Japanese</span>,<br>played like a game.<br><span class="jp-accent">楽しく</span> learn.',
+    "hero.lead": "From their first ひらがな to ordering ramen in Tokyo. NihongoQuest is the quest-based app where Malaysian kids actually learn real Japanese — 15 minutes a day, starting free.",
+    "outcomes.hook": "The language behind the anime, games and culture your kids already love — and a real edge for their future.",
+    "outcomes.title": "By their first term, your child <em>can</em>:",
+    "outcomes.o1": "Read hiragana & katakana",
+    "outcomes.o2": "Greet & introduce themselves",
+    "outcomes.o3": "Order food & count money",
+    "outcomes.o4": "Ask for directions",
+    "outcomes.goal": "…all the way to travelling Japan on their own — <strong>JLPT N5</strong>.",
     "form.title": "Register free — play the beta today",
     "form.subtitle": "Sign up to instantly unlock the free beta — hiragana, katakana & quizzes. Plus 40% off at launch.",
     "form.email": "Your email",
@@ -1331,8 +1368,15 @@ const I18N = {
   ms: {
     "badge.earlybird": "AWAL PANTAS",
     "badge.status": "Beta percuma tersedia sekarang",
-    "hero.title": 'Belajar bahasa<br>Jepun dengan <span class="accent">seronok</span>.<br><span class="jp-accent">楽しく</span> belajar.',
-    "hero.lead": "Pengembaraan pembelajaran bahasa Jepun direka khas untuk anak-anak Malaysia. Misi RPG, latihan perbualan AI, dan kemajuan yang boleh dipantau ibu bapa — semuanya dalam satu aplikasi.",
+    "hero.title": 'Bahasa Jepun <span class="accent">sebenar</span>,<br>dimainkan seperti game.<br><span class="jp-accent">楽しく</span> belajar.',
+    "hero.lead": "Dari ひらがな pertama hingga memesan ramen di Tokyo. NihongoQuest ialah aplikasi berasaskan misi di mana anak Malaysia benar-benar belajar bahasa Jepun sebenar — 15 minit sehari, mula secara percuma.",
+    "outcomes.hook": "Bahasa di sebalik anime, game dan budaya yang anak anda memang sudah minat — dan kelebihan sebenar untuk masa depan mereka.",
+    "outcomes.title": "Menjelang penggal pertama, anak anda <em>boleh</em>:",
+    "outcomes.o1": "Membaca hiragana & katakana",
+    "outcomes.o2": "Memberi salam & memperkenalkan diri",
+    "outcomes.o3": "Memesan makanan & mengira duit",
+    "outcomes.o4": "Bertanya arah",
+    "outcomes.goal": "…sehingga mampu mengembara di Jepun sendiri — <strong>JLPT N5</strong>.",
     "form.title": "Daftar percuma — main beta hari ini",
     "form.subtitle": "Daftar untuk buka beta percuma serta-merta — hiragana, katakana & kuiz. Tambah diskaun 40% semasa pelancaran.",
     "form.email": "E-mel anda",
@@ -1417,8 +1461,15 @@ const I18N = {
   zh: {
     "badge.earlybird": "早鸟优惠",
     "badge.status": "免费测试版现已开放",
-    "hero.title": '用<span class="accent">好玩的</span>方式<br>学日文。<br><span class="jp-accent">楽しく</span> 学习。',
-    "hero.lead": "专为马来西亚孩子设计的日语学习冒险。RPG 任务、AI 口语练习、家长可查看的学习进度 —— 一个应用全搞定。",
+    "hero.title": '<span class="accent">真正的</span>日语，<br>像游戏一样学。<br><span class="jp-accent">楽しく</span> 学习。',
+    "hero.lead": "从第一个 ひらがな 到在东京点一碗拉面。NihongoQuest 是以任务为核心的应用，让马来西亚孩子真正学会日语 —— 每天 15 分钟，免费开始。",
+    "outcomes.hook": "孩子早已喜爱的动漫、游戏和文化背后的语言 —— 也是他们未来的真正优势。",
+    "outcomes.title": "第一个学期结束，您的孩子就<em>能</em>：",
+    "outcomes.o1": "认读平假名和片假名",
+    "outcomes.o2": "打招呼并自我介绍",
+    "outcomes.o3": "点餐并数钱",
+    "outcomes.o4": "问路",
+    "outcomes.goal": "…一路到能独自游览日本 —— <strong>JLPT N5</strong>。",
     "form.title": "免费注册 — 今天就玩测试版",
     "form.subtitle": "注册即可立即解锁免费测试版 — 平假名、片假名和测验。上线时再享 40% 折扣。",
     "form.email": "您的邮箱",
